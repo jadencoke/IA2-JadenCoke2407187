@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title> Registration </title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+	<div class= "login-box ">
+	<form action="login.html">
+	<nav>
+		<h2>Sign Up with<br> <span> Oist Noir </span></h2>
+
+		<div class="input-box">
+
+			<span class="icon"><ion-icon name="person"></ion-icon></span>
+			<input type="text" id= "username" required>
+			<label>Username</label>
+		</div>
+
+		<div class="input-box">
+
+			<span class="icon"> <ion-icon name="mail"></ion-icon> </span>
+			<input type="email" id="email" required>
+			<label>Email</label>
+		</div>
+
+		<div class="input-box">
+
+			<span class="icon"> <ion-icon name="lock-open"></ion-icon> </span>
+			<input type = "password" id="Create-password" required>
+			<label>Create Password</label>
+		</div>
+
+		<div class="input-box">
+
+			<span class="icon"> <ion-icon name="lock-closed"></ion-icon> </span>
+			<input type = "password" id="Confirm-password" required>
+			<label>Confirm Password</label>
+		</div>
+
+			<button type="submit" id = "register">Register</button>
+
+		<div class="register-link">
+			<p>already have an account?
+			<a href="login.html">Login</a></p>
+		</div>
+	</nav>
+	</form>
+	</div>
+	
+		<script src="script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>

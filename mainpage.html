@@ -1,0 +1,137 @@
+<!--Jaden Coke ID#-2407187 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>OIST NOIR</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+	<!--Icons-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+	<link rel="stylesheet" href="mainpage.css">
+</head>
+
+<body>
+
+<!-- navigation -->
+<header>
+	<div class="container">
+        
+        	<h1 class="nav-logo">OIST NOIR</h1>
+
+        	<nav>
+            		<ul class="nav-links">
+                		<li class="nav-link"><a href="mainpage.html">Home</a></li>
+                		<li class="nav-link"><a href="#product">Products</a></li>
+                		<li class="nav-link"><a href="cart.html">Cart</a></li>
+                		<li class="nav-link"><a href="#about-us">About Us</a></li>
+				<li class="nav-link-login"><a href="login.html">Signin/Signup</a></li>
+            		</ul>
+        	</nav>
+
+	</div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+
+	<div class="overlay">
+
+        	<div class="hero-content">
+
+            		<h1 class="logo">Oist Noir</h1>
+            		<p class="tagline">Where Refined Simplicity Meets<br><span> Timeless Style </span></p>
+            		<nav><a href="#product"><button class="shop-btn ">Shop Collection</button></a></nav>
+
+        	</div>
+    	</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="product" class="products">
+	
+	<h2>Our Collection</h2>
+
+	<div class="product-container">
+
+        	<div class="product">
+			<img class ="product-img" src="../Assets/BlackTee.png" alt="Black Tee">
+			<h3>Classic Black Tee <br> Recently stocked </h3>
+			<p>$120</p>
+			<button class = "buy-Btn"  onclick="addToCart('Black Tee', 120)">Buy</button>
+        	</div>
+	
+		<div class="product">
+			<img class ="product-img" src="../Assets/jeans.jpeg" alt="Jeans">
+			<h3>Noir Jeans <br> Recently stocked </h3>
+			<p>$210</p>
+			<button class = "buy-Btn" onclick="addToCart('jean', 210)">Buy</button>
+
+        	</div>
+	</div>
+	<div class="product-container">
+
+        	<div class="product">
+			<img class ="product-img" src="../Assets/Qzip.jpg" alt="Quaterzip">
+            		<h3>Noir Quater Zips <br> for casual/formal occasions </h3>
+            		<p>$200</p>
+	    		<button onclick="addToCart('Quarter Zip', 200)">Buy</button>
+
+        	</div>
+
+        	<div class="product">
+			<img class ="product-img" src="../Assets/watch1.jpg" alt="Minimal watch">
+			<h3>Noir Minimal Watch <br> Simple Design </h3>
+			<p>$150</p>
+			<button onclick="addToCart('Minimal Watch', 150)">Buy</button>
+
+        	</div>
+
+	 	<div class="product">
+			<img class ="product-img" src="../Assets/watch.jpg" alt="Mechanical watch">
+			<h3>Noir Mechanical Watch</h3>
+			<p>$200</p>
+			<button onclick="addToCart('Mechanical Watch', 200)">Buy</button>
+       		</div>
+
+	</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about-us" class="about">
+	<h2>About Oist Noir</h2><br>
+
+    <p>
+        Oist Noir is a luxury fashion brand focused on minimalism, elegance, and timeless style.
+        Designed for individuals with a thirst for refined aesthetics and a modern taste which our products satisfies.
+    </p>
+
+    <div class="info-box">
+        <p><strong>Developer:</strong> Jaden Coke</p>
+        <p><strong>ID#:</strong> 2407187</p>
+        <p><strong>Module:</strong> CIT2011</p>
+        <p><strong>Assignment:</strong> IA Ecommerce Website</p>
+        <p><strong>Class:</strong> Friday 11:00 AM</p>
+    </div>
+</section>
+
+    <p class="contact-section"> Click the button below to "Contact" Us<br><br>
+    <a href="mailto:2407187@utech.edu.jm" class="contact-btn">Contact Us</a>
+</p><br><br>
+
+<!-- FOOTER -->
+<footer>
+    	<p>© 2026 OIST NOIR. Educational purposes only.</p>
+</footer>
+
+<script src = "script.js"> </script>
+
+</body>
+
+</html>

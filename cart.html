@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>OIST NOIR</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+	<!--Icons-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+	<link rel="stylesheet" href="mainpage.css">
+</head>
+
+<body>
+
+<!-- navigation -->
+<header>
+	<div class="container">
+        
+        	<h1 class="nav-logo">OIST NOIR</h1>
+
+        	<nav>
+            		<ul class="nav-links">
+                		<li class="nav-link"><a href="mainpage.html">Home</a></li>
+                		<li class="nav-link"><a href="mainpage.html">Products</a></li>
+                		<li class="nav-link"><a href="cart.html">Cart</a></li>
+                		<li class="nav-link"><a href="mainpage.html">About Us</a></li>
+				<li class="nav-link-login"><a href="login.html">Signin/Signup</a></li>
+            		</ul>
+        	</nav>
+
+	</div>
+</header><!-- CART SECTION -->
+<section class="cart-container">
+    <h2 class="cart-title">Your Luxury Selection</h2>
+
+    <div class="cart-wrapper">
+        <!-- The Table for Items -->
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Sub-total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- JavaScript will fill this part -->
+            </tbody>
+        </table>
+
+        <!-- The Calculation Summary -->
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Raw Sub-total:</span>
+                <span>$<span id="raw-subtotal">0.00</span></span>
+            </div>
+            <div class="summary-row">
+                <span>Discount (10% over $500):</span>
+                <span>-$<span id="discount">0.00</span></span>
+            </div>
+            <div class="summary-row">
+                <span>GCT (15%):</span>
+                <span>$<span id="tax">0.00</span></span>
+            </div>
+            <hr>
+            <div class="summary-row grand-total">
+                <span>Grand Total:</span>
+                <span>$<span id="grand-total">0.00</span></span>
+            </div>
+
+            <div class="cart-buttons">
+                <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+                <button onclick="proceedToCheckout()" class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

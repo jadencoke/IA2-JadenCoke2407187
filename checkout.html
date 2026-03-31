@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIST NOIR | Checkout</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="nav-logo">OIST NOIR</h1>
+        <nav><ul class="nav-links"><li><a href="mainpage.html">Back to Shop</a></li></ul></nav>
+    </div>
+</header>
+
+<section class="checkout-container">
+    <div class="checkout-grid">
+        
+        <!-- LEFT SIDE: FORM -->
+        <div class="checkout-card">
+            <h2>Shipping & Payment</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="ship-name" placeholder="Jaden Coke" required>
+                </div>
+                <div class="form-group">
+                    <label>Shipping Address</label>
+                    <input type="text" id="ship-address" placeholder="123 Kingston Ave" required>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select id="payment-method">
+                        <option value="credit">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Amount to Pay ($)</label>
+                    <input type="text" id="pay-amount" readonly>
+                </div>
+
+                <div class="checkout-actions">
+                    <button type="submit" class="confirm-btn">Confirm Payment</button>
+                    <button type="button" class="cancel-btn" onclick="window.location.href='cart.html'">Cancel Order</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- RIGHT SIDE: SUMMARY -->
+        <div class="checkout-card summary-card">
+            <h2>Order Summary</h2>
+            <div id="checkout-list" class="mini-cart-list">
+                <!-- JS will fill items here -->
+            </div>
+            <div class="summary-footer">
+                <div class="summary-line"><span>Subtotal:</span><span id="check-sub">0.00</span></div>
+                <div class="summary-line"><span>Tax (GCT 15%):</span><span id="check-tax">0.00</span></div>
+                <div class="summary-line total-line"><span>Total:</span><span id="check-total">0.00</span></div>
+            </div>
+            
+            <div class="extra-controls">
+                <button onclick="clearCart()" class="control-btn">Clear All</button>
+                <button onclick="window.close()" class="control-btn">Close Window</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
